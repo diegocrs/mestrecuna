@@ -55,7 +55,7 @@ const Button = ({ children, primary = false, full = false }: { children: React.R
     whileTap={{ scale: 0.95 }}
     className={`
       ${full ? 'w-full' : 'px-8'} 
-      py-4 rounded-full font-black uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-2
+      py-4 rounded-full font-black uppercase tracking-tight text-sm md:text-base transition-all duration-300 flex items-center justify-center gap-2
       ${primary 
         ? 'bg-brand-neon text-black hover:bg-white neon-glow' 
         : 'bg-transparent border-2 border-brand-neon text-brand-neon hover:bg-brand-neon hover:text-black'}
@@ -166,7 +166,7 @@ export default function App() {
                 transition={{ delay: 0.4 }}
                 className="flex flex-col sm:flex-row gap-4 justify-start items-center"
               >
-                <Button primary>Quero entrar agora</Button>
+                <Button primary>Entrar agora</Button>
               </motion.div>
             </div>
 
@@ -350,7 +350,7 @@ export default function App() {
             Ao entrar no Mestres do Digital, você não vai estar sozinho. Vai fazer parte de uma comunidade exclusiva com outros criadores que estão no mesmo caminho — aprendendo, crescendo e gerando renda juntos. Troque experiências, tire dúvidas e evolua com o grupo.
           </p>
           <div className="flex justify-center">
-            <Button primary>Garantir minha vaga na comunidade</Button>
+            <Button primary>Entrar na comunidade</Button>
           </div>
         </div>
       </section>
@@ -398,16 +398,16 @@ export default function App() {
             </p>
 
             <div className="mb-12">
-              <p className="text-gray-500 line-through text-2xl">De R$ 497,00</p>
+              <p className="text-gray-500 line-through text-2xl">De R$ 197,00</p>
               <div className="flex items-center justify-center gap-2">
                 <span className="text-2xl font-bold">12x</span>
-                <span className="text-7xl md:text-9xl font-black text-brand-neon tracking-tighter">29,90</span>
+                <span className="text-7xl md:text-9xl font-black text-brand-neon tracking-tighter">4,98</span>
               </div>
-              <p className="text-xl font-bold mt-4">Ou R$ 297,00 à vista</p>
+              <p className="text-xl font-bold mt-4">Ou R$ 49,90 à vista</p>
             </div>
 
             <div className="max-w-md mx-auto">
-              <Button primary full>Quero começar agora <ArrowRight className="w-5 h-5" /></Button>
+              <Button primary full>Começar agora <ArrowRight className="w-5 h-5" /></Button>
               <p className="text-[10px] uppercase font-bold tracking-widest text-gray-500 mt-6 flex items-center justify-center gap-2">
                 <Zap className="w-3 h-3 text-brand-neon" /> Vagas limitadas — garanta a sua agora
               </p>
