@@ -400,7 +400,7 @@ export default function App() {
             <div className="mb-12">
               <p className="text-gray-500 line-through text-2xl">De R$ 197,00</p>
               <div className="flex items-center justify-center gap-2">
-                <span className="text-2xl font-bold">12x</span>
+                <span className="text-2xl font-bold">10x</span>
                 <span className="text-7xl md:text-9xl font-black text-brand-neon tracking-tighter">4,98</span>
               </div>
               <p className="text-xl font-bold mt-4">Ou R$ 49,90 à vista</p>
